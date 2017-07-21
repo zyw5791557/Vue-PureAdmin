@@ -24,7 +24,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'scss_vars': '@/styles/vars.scss'
-      // 'jquery': path.resolve(__dirname, '../node_modules/jquery/src/jquery')
+      //'jquery': path.resolve(__dirname, '../node_modules/jquery/src/jquery')
     }
   },
   
@@ -59,9 +59,8 @@ module.exports = {
     ]
   },
 
-  // 增加一个plugins
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('common.js'),
+        //new webpack.optimize.CommonsChunkPlugin('common.js'),
         new webpack.ProvidePlugin({
             jQuery: "jquery",
             $: "jquery"
